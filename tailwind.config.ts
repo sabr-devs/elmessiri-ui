@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import type { Config } from "tailwindcss";
 import tailwindcssAnimate from 'tailwindcss-animate';
 import defaultTheme from 'tailwindcss/defaultTheme';
 module.exports = {
@@ -8,7 +7,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: ['class', 'class'],
+  darkMode: 'class',
 
   theme: {
   	screens: {
@@ -20,17 +19,11 @@ module.exports = {
   		center: true
   	},
   	extend: {
-  		fontFamily: {
-  			Inter: [
-  				'Inter', sans-serif'
-  			],
-  			jakarta_sans: [
-  				'Plus Jakarta Sans', sans-serif'
-  			],
-  			playfair: [
-  				'Playfair Display', serif'
-  			]
-  		},
+      fontFamily: {
+        Inter: ["'Inter', sans-serif"],
+        jakarta_sans: ["'Plus Jakarta Sans', sans-serif"],
+        playfair: ["'Playfair Display', serif"],
+      },
   		colors: {
   			primary: {
   				'100': '#F3F8E8',
@@ -173,5 +166,5 @@ module.exports = {
       pattern: /scale-/,
     },
   ],
-  plugins: [tailwindcssAnimate, require("tailwindcss-animate")],
-}  satisfies Config;
+  plugins: [tailwindcssAnimate],
+}  
