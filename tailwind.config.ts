@@ -20,9 +20,7 @@ module.exports = {
   	},
   	extend: {
       fontFamily: {
-        Inter: ["'Inter', sans-serif"],
-        jakarta_sans: ["'Plus Jakarta Sans', sans-serif"],
-        playfair: ["'Playfair Display', serif"],
+        cairo: ['var(--font-cairo)', 'sans-serif'],
       },
   		colors: {
   			primary: {

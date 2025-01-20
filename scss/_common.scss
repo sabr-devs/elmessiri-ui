@@ -139,7 +139,7 @@ span {
   ul {
     @apply mb-12;
     li {
-      @apply relative pl-10 font-jakarta_sans font-semibold dark:text-white;
+      @apply relative pl-10 font-cairo font-semibold dark:text-white;
       &:not(:last-child) {
         @apply mb-6;
       }

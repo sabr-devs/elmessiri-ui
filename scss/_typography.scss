@@ -1,15 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@600&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@600&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
 @layer base {
   body {
-    @apply text-paragraph dark:text-white;
+    @apply font-cairo text-paragraph dark:text-white;
   }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply font-jakarta_sans text-paragraph dark:text-white;
+    @apply font-cairo text-paragraph dark:text-white;
   }
 
   h1 {
@@ -35,13 +37,16 @@
   h6 {
     @apply text-base font-normal;
   }
+
   p {
-    @apply font-Inter text-base font-normal leading-[1.75]  -tracking-[0.3px] text-paragraph dark:text-white;
+    @apply font-cairo text-base font-normal leading-[1.75] -tracking-[0.3px] text-paragraph dark:text-white;
   }
+
   em {
     @apply not-italic;
   }
+
   a {
-    @apply inline-block font-Inter text-base font-normal leading-[1.75]  -tracking-[0.3px]  text-paragraph dark:text-white;
+    @apply inline-block font-cairo text-base font-normal leading-[1.75] -tracking-[0.3px] text-paragraph dark:text-white;
   }
 }

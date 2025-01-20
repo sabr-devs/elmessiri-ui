@@ -1,31 +1,18 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/utils/theme-provider";
 import "@/scss/theme.scss";
-import ThemeSwitcher from "@/components/theme/ThemeSwitcher";
+import Footer from "@/components/layout/Footer";
+import  MainNavbar  from "@/components/layout/navbar/MainNavbar";
 import { cn } from "@/lib/utils";
-import { Inter, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google'
+import { Cairo } from 'next/font/google'
 
-const inter = Inter({
-  weight: ['200', '300', '400', '500', '600', '700', '800'],
-  style: ['normal'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
-const jakarta_sans = Plus_Jakarta_Sans({
-  weight: ['200', '300', '400', '500', '600', '700', '800'],
-  style: ['normal'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-jakarta_sans',
-})
-const playfair = Playfair_Display({
-  weight: ['600'],
-  style: ['normal'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-playfair',
-})
+const cairo = Cairo({
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'], // Add the weights you need
+  style: ['normal'], // Include italic if needed
+  subsets: ['latin', 'arabic'], // Include Arabic subset
+  display: 'swap', // Optimize font rendering
+  variable: '--font-cairo', // Custom CSS variable for the font
+});
 
 export const metadata: Metadata = {
   title: "V0",
@@ -37,13 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar">
+    <html lang="ar" dir="rtl">
       <body
         className={cn(
           'relative overflow-x-hidden bg-white text-base antialiased dark:bg-dark-300',
-          inter.variable,
-          jakarta_sans.variable,
-          playfair.variable,
+          cairo.variable, // Add Cairo here
         )}
       >
         <ThemeProvider
@@ -52,8 +37,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ThemeSwitcher />
+          <MainNavbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -12,11 +12,11 @@ const ThemeSwitcher = () => {
   }, [])
   // console.log(currentTheme)
   return mount ? (
-    <div className="toggle-button fixed right-5 z-[10000000000] max-lg:bottom-2.5 lg:top-1/3">
+    <div className="toggle-button ">
       <button
         onClick={() => setTheme(currentTheme === 'dark' ? 'light' : 'dark')}
         type="button"
-        className="flex h-10 w-10 items-center justify-center rounded-md border border-paragraph/25 text-paragraph focus:outline-none focus:ring-0 focus:ring-gray-200 dark:border-borderColor-dark dark:text-white">
+        className="flex h-10 w-10 items-center justify-center  text-paragraph focus:outline-none focus:ring-0 focus:ring-gray-200 dark:border-borderColor-dark dark:text-white">
         <LightMode />
         <DarkMode />
       </button>
