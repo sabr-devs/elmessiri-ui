@@ -1,7 +1,7 @@
 export const MenuData = {
     "logoLight": "/assets/images/logo/sabr-logo.png",
     "logoDark": "/assets/images/logo/sabr-logo-light.png",
-    "btnLlink": "/request-demo",
+    "btnLlink": "/sign-up",
     "menuContent": [
       {
         "id": 1,
@@ -18,7 +18,7 @@ export const MenuData = {
       {
         "id": 3,
         "title": "الدليل الإجرائي",
-        "path": "/guide",
+        "path": "/procedural-guide",
         "newTab": false
       },
       {

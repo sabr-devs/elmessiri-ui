@@ -137,7 +137,7 @@ const PrimaryNavbar = () => {
             <ThemeSwitcher />
             </li>
             <li className="max-lg:hidden">
-              <Link href="/request-demo" className="btn btn-navbar btn-sm">
+              <Link href="/sign-in" className="btn btn-navbar btn-sm">
                 تسجيل الدخول
               </Link>
             </li>
@@ -238,7 +238,7 @@ const PrimaryNavbar = () => {
               ))}
 
               <li>
-                <Link href="/request-demo" className="btn btn-navbar btn-sm">
+                <Link href="/sign-in" className="btn btn-navbar btn-sm">
                   تسجيل الدخول
                 </Link>
               </li>

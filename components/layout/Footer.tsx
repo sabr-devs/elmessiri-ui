@@ -100,7 +100,7 @@ export default function Footer() {
           <div className="flex items-center justify-center">
             <span className="text-gray-400 ">
               <a href="https://sabr-sp.com/">
-                جميع الحقوق محفوظة لـ : سبر لتصميم الأعمل
+                جميع الحقوق محفوظة لـ : سبر لتصميم الأعمال
               </a>
               © 2025
             </span>
